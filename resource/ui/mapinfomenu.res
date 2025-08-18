@@ -431,6 +431,16 @@
 		"border_default"			"HL2ButtonBorder"
 		"border_armed"			"HL2ButtonBorder"
 	}
+
+	"ContinueShortcut"
+	{
+		"ControlName"		"CExButton"
+		"fieldName"			"ContinueShortcut"
+		"wide"				"0"
+		"visible"			"1"
+		"labelText"			"&E"
+		"Command"			"continue"
+	}
 	
 	"MapInfoWatchIntro" [$WIN32]
 	{

@@ -399,6 +399,16 @@
 		"border_default"			"HL2ButtonBorder"
 		"border_armed"			"HL2ButtonBorder"
 	}
+
+	"OkShortcut"
+	{
+		"ControlName"		"CExButton"
+		"fieldName"			"OkShortcut"
+		"wide"				"0"
+		"visible"			"1"
+		"labelText"			"&E"
+		"Command"			"okay"
+	}
 	
 	"MenuBG"
 	{

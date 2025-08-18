@@ -32,6 +32,7 @@
 		"command"		"nav_close"
 
 		"textAlignment"	"center"
+		"textinsetx"	"-5"
 		"font"			"Marlett6"
 		"paintbackground"	"0"
 		"defaultFgColor_override"	"180 180 180 196"
