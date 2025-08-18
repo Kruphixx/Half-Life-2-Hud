@@ -49,7 +49,7 @@
 			"tall"			"f5"
 			"visible"		"1"
 			"paintBorder"	"0"
-			"bgcolor_override"	"BGBright"
+			"bgcolor_override"	"BGBrightSolid"
 			"paintBackground"	"1"
 			"paintBackgroundtype"	"2"
 			"proportionaltoparent"	"1"

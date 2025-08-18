@@ -296,7 +296,7 @@
 				"visible"		"1"
 				"proportionaltoparent"	"1"
 				"paintBorder"	"0"
-				"bgcolor_override"	"BGBright"
+				"bgcolor_override"	"BGBrightSolid"
 				"paintBackground"	"1"
 				"paintBackgroundtype"	"2"
 			}
