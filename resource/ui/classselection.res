@@ -1133,6 +1133,16 @@
 		"pin_to_sibling_corner"	"2"
 	}
 
+	"EditLoadoutShortcut"
+	{
+		"ControlName"		"CExButton"
+		"fieldName"			"EditLoadoutShortcut"
+		"wide"				"0"
+		"visible"			"1"
+		"labelText"			"&E"
+		"Command"			"openloadout"
+	}
+
 	"ResetButton" [$WIN32] 
 	{
 		"ControlName"	"CExButton"

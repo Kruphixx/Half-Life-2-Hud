@@ -332,6 +332,14 @@
 				"tall"			"f0"
 				"proportionaltoparent"	"1"
 
+				if_mini
+				{
+					"xpos"		"cs-0.5"
+					"ypos"		"rs1-3"
+					"wide"		"p1"
+					"tall"		"30"
+				}
+
 				"CurrentXPLabel"
 				{
 					"ControlName"	"Label"
@@ -405,6 +413,14 @@
 					"tall"			"9"
 					"proportionaltoparent"	"1"
 
+					if_mini
+					{
+						"xpos"		"0"
+						"ypos"		"rs1-10"
+						"wide"		"p1"
+						"tall"		"7"
+					}
+
 					"ProgressBar"
 					{
 						"ControlName"	"ProgressBar"
@@ -419,6 +435,12 @@
 
 						"fgcolor_override"	"Blank"
 						"bgcolor_override"	"78 78 78 255"
+
+						if_mini
+						{
+							"xpos"		"0"
+							"ypos"		"cs-0.5"
+						}
 					}
 
 					"ContinuousProgressBar"
@@ -435,6 +457,12 @@
 						
 						"bgcolor_override"	"Blank"
 						"fgcolor_override"	"220 220 220 255"
+
+						if_mini
+						{
+							"xpos"		"cs-0.5"
+							"ypos"		"cs-0.5"
+						}
 					}
 
 					"Frame"

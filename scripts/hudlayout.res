@@ -3,6 +3,11 @@
 
 "Resource/HudLayout.res"
 {
+	MMDashBoardPopupContainer
+	{
+		"ypos"			"-330"
+	}
+
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"

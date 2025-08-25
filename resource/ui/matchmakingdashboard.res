@@ -278,7 +278,7 @@
 				"zpos"			"-1"
 				"wide"			"f0"
 				"tall"			"f0"
-				"visible"		"1"
+				"visible"		"0"
 				"proportionaltoparent"	"1"
 
 				"border"		"OuterShadowBorderThin"
@@ -295,8 +295,10 @@
 				"tall"			"f4"
 				"visible"		"1"
 				"proportionaltoparent"	"1"
-
-				"border"		"ReplayDefaultBorder"
+				"paintBorder"	"0"
+				"bgcolor_override"	"BGBrightSolid"
+				"paintBackground"	"1"
+				"paintBackgroundtype"	"2"
 			}
 
 			"QueueLogoButton"
@@ -343,7 +345,7 @@
 				"radius"		"10"
 				"velocity"		"100"
 
-				"fgcolor_override"	"TFOrange"
+				"fgcolor_override"	"HudWhite"
 			}
 
 			"QueueText"
@@ -358,7 +360,7 @@
 				"visible"		"1"
 				"enabled"		"1"
 				"font"			"HudFontSmallestBold"
-				"fgcolor_override"	"TanLight"
+				"fgcolor_override"	"HudWhite"
 				"textAlignment"	"west"
 				"labelText"		"%queue_state%"
 				"proportionaltoparent"	"1"
@@ -435,21 +437,20 @@
 			{
 				"ControlName"	"CExImageButton"
 				"fieldName"		"CloseButton"
-				"xpos"			"rs1-6"
-				"ypos"			"11"
+				"xpos"			"rs1-9"
+				"ypos"			"13"
 				"zpos"			"10"
-				"wide"			"14"
-				"tall"			"14"
+				"wide"			"8"
+				"tall"			"8"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"enabled"		"1"
 				"tabPosition"	"0"
-				"labeltext"		""
-				"font"			"HudFontSmallBold"
+				"labeltext"		"r"
+				"font"			"C_Src_Marlett6"
 				"textAlignment"	"center"
-				"dulltext"		"0"
-				"brighttext"	"0"
+				"textinsetx"	"-5"
 				"default"		"1"
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
@@ -459,12 +460,10 @@
 			
 				"paintbackground"	"0"
 			
-				"defaultFgColor_override" "46 43 42 255"
-				"armedFgColor_override" "235 226 202 255"
-				"depressedFgColor_override" "46 43 42 255"
-			
-				"image_drawcolor"	"117 107 94 255"
-				"image_armedcolor"	"200 80 60 255"
+				"defaultFgColor_override" "HudWhite"
+				"armedFgColor_override" "HudWhite"
+				"depressedFgColor_override" "HudWhite"
+
 				"SubImage"
 				{
 					"ControlName"	"ImagePanel"
@@ -474,9 +473,9 @@
 					"zpos"			"1"
 					"wide"			"14"
 					"tall"			"14"
-					"visible"		"1"
+					"visible"		"0"
 					"enabled"		"1"
-					"image"			"close_button"
+					"image"			""
 					"scaleImage"	"1"
 				}				
 			}		

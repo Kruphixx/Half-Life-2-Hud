@@ -1,21 +1,5 @@
-"Resource/UI/MapInfoMenu.res"
+"Resource/UI/ArenaTeamMenu.res"
 {
-	"mapinfo"
-	{
-		"ControlName"	"Frame"
-		"fieldName"		"mapinfo"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"f0"
-		"tall"			"480"
-		"autoResize"	"1"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"paintbackground"	"0"
-	}
-	
 	"BG"
 	{
 		"ControlName"	"EditablePanel"
@@ -230,6 +214,7 @@
 			}
 		}
 	}
+
 	"Logo"
 	{
 		"ControlName"	"EditablePanel"
@@ -257,11 +242,11 @@
 			"scaleImage"	"1"
 		}	
 	}
-	
-	"MapInfoTitle"
+
+	"TeamMenuSelect"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"MapInfoTitle"
+		"fieldName"		"TeamMenuSelect"
 		"xpos"			"cs-0.5"
 		"ypos"			"c-220"
 		"zpos"			"2"
@@ -271,248 +256,244 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"%mapname%"
+		"labelText"		"#TF_SelectATeam"
 		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"font"			"MatchmakingDialogMenuSmallest"
 		"fgcolor"		"PanelText"
 	}
-	
-	"MapInfoType"
+
+	"team"
 	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"MapInfoType"
-		"xpos"			"c-184"
-		"xpos_lodef"			"c-174"
-		"xpos_hidef"			"c-174"
-		"ypos"			"125"
-		"ypos_lodef"			"140"
-		"zpos"			"1"
-		"wide"			"225"
+		"ControlName"		"CTeamMenu"
+		"fieldName"		"team"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+	}
+
+	"SysMenu"
+	{
+		"ControlName"	"Menu"
+		"fieldName"		"SysMenu"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"64"
 		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"%gamemode%"
-		"textAlignment"	"west"
-		"font"			"ChalkboardText"
-		"fgcolor"		"Gray"
-	}	
-	
-	"MapInfoText"
+		"visible"		"0"
+		"enabled"		"0"
+		"tabPosition"	"0"
+	}
+
+	"MapInfo"
 	{
-		"ControlName"	"CExRichText"
-		"fieldName"		"MapInfoText"
-		"font"			"DefaultSmall"
-		"xpos"			"c-244"
-		"ypos"			"c-124"
-		"zpos"			"1"
-		"wide"			"480"
-		"tall"			"240"
+		"ControlName"		"HTML"
+		"fieldName"		"MapInfo"
+		"xpos"			"100"
+		"ypos"			"34"
+		"wide"			"450"
+		"tall"			"365"
 		"autoResize"	"3"
 		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"tabPosition"	"0"
+	}
+
+	"mapname"
+	{
+		"ControlName"		"Label"
+		"fieldName"		"mapname"
+		"xpos"			"c-310"
+		"ypos"			"50"
+		"wide"			"90"
+		"tall"			"24"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"labelText"		""
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"1"
+	}
+
+	"teambutton2"
+	{
+		"ControlName"		"CTFTeamButton"
+		"fieldName"		"teambutton2"
+		"xpos"			"c-244"
+		"ypos"			"c-124"
+		"zpos"			"3"
+		"wide"			"148"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
-		"paintborder"	"0"
-		"textAlignment"	"northwest"
+		"tabPosition"	"1"
+		"labelText"		"&1 FIGHT"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"paintborder"	"1"
+		"border"	"HL2ButtonBorder"
+		"border_default"	"HL2ButtonBorder"
+		"border_armed"	"HL2ButtonBorder"
+		"paintbackgroundtype"	"0"
+		"command"		"jointeam spectate"
+		"font"			"Default"
 		"fgcolor"		"PanelText"
-		"bgcolor_override"		"0 0 0 255"
+		"armedfgcolor_override"		"PanelText"
+		"defaultfgcolor_override"		"PanelText"
+		
+		"bgcolor"		"Blank"
+		"armedbgcolor_override"		"Red"
+		"defaultbgcolor_override"		"Blank"
+	}
+
+	"teambutton3"
+	{
+		"ControlName"		"CTFTeamButton"
+		"fieldName"		"teambutton3"
+		"xpos"			"0"
+		"ypos"			"12"
+		"zpos"			"3"
+		"wide"			"148"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"4"
+		"labelText"		"&2 SPECTATE"
+		"textAlignment"	"west"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"paintborder"	"1"
+		"border"	"HL2ButtonBorder"
+		"border_default"	"HL2ButtonBorder"
+		"border_armed"	"HL2ButtonBorder"
+		"paintbackgroundtype"	"0"
+		"command"		"jointeam spectatearena"
+		"hover"				"2.0"
+		"font"			"Default"
+		"fgcolor"		"PanelText"
+		"armedfgcolor_override"		"PanelText"
+		"defaultfgcolor_override"		"PanelText"
+		
+		"bgcolor"		"Blank"
+		"armedbgcolor_override"		"Red"
+		"defaultbgcolor_override"		"Blank"
+		
+		"pin_to_sibling"		"teambutton2"
+		"pin_corner_to_sibling"	"0"
+		"pin_to_sibling_corner"	"2"
 	}
 	
-	"MapImage"
+	"CancelButton" [$WIN32] 
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"MapImage"
-		"xpos"			"r0"
-		"xpos_lodef"			"c35"
-		"xpos_hidef"			"c35"
-		"ypos"			"75"
-		"ypos_lodef"			"100"
-		"ypos_hidef"			"100"
-		"zpos"			"2"
-		"wide"			"0"
-		"tall"			"275"
+		"ControlName"	"CExButton"
+		"fieldName"		"CancelButton"
+		"xpos"			"0"
+		"ypos"			"44"
+		"zpos"			"3"
+		"wide"			"148"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"2"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			""
-		"scaleImage"	"1"		
-	}
-
-	"MapInfoContinue" [$WIN32]
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"MapInfoContinue"
-		"xpos"			"r0"
-		"ypos"			"8"
-		"zpos"			"6"
-		"wide"			"128"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"OK"
-		"textAlignment"	"center"
+		"tabPosition"	"0"
+		"labelText"		"#TF_Cancel"
+		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"command"		"continue"
-		"default"		"1"
-		"font"			"Default"
+		"command"		"cancelmenu"
+
+		"border"	"HL2ButtonBorder"
+		"border_default"	"HL2ButtonBorder"
+		"border_armed"	"HL2ButtonBorder"
+		"paintbackgroundtype"	"0"
 		
-		"pin_to_sibling"		"MapInfoText"
+		"font"			"Default"
+		"fgcolor"		"PanelText"
+		"armedfgcolor_override"		"PanelText"
+		"defaultfgcolor_override"		"PanelText"
+		
+		"bgcolor"		"Blank"
+		"armedbgcolor_override"		"Red"
+		"defaultbgcolor_override"		"Blank"
+		
+		"pin_to_sibling"		"teambutton3"
 		"pin_corner_to_sibling"	"0"
 		"pin_to_sibling_corner"	"2"
-		
-		"fgcolor"			"PanelText"
-		"defaultFgColor_override" "PanelText"
-		"armedFgColor_override" "PanelText"
-		"depressedFgColor_override" "PanelText"
-		"selectedFgColor_override" "PanelText"
-			
-		"bgcolor_override"			"blank"
-		"defaultbgColor_override" "blank"
-		"armedbgColor_override" "Red"
-		"depressedbgColor_override" "blank"
-		"selectedbgColor_override" "Red"
-		
-		"paintbackground"	"1"
-		"paintborder"	"1"
-		"paintbackgroundtype"	"0"
-		
-		"border"			"HL2ButtonBorder"
-		"border_default"			"HL2ButtonBorder"
-		"border_armed"			"HL2ButtonBorder"
 	}
-	
-	"MapInfoContinue2" [$WIN32]
+		
+	"TeamMenuAuto"
 	{
-		"ControlName"	"CExButton"
-		"fieldName"		"MapInfoContinue2"
-		"xpos"			"0"
-		"ypos"			"8"
-		"zpos"			"6"
-		"wide"			"128"
-		"tall"			"20"
+		"ControlName"	"CExLabel"
+		"fieldName"		"TeamMenuAuto"
+		"xpos"			"c-280" [$WIN32] 
+		"xpos"			"c-276" [$X360]
+		"xpos_lodef"			"c-255"
+		"xpos_hidef"			"c-260"
+		"ypos"			"55"
+		"ypos_lodef"			"72"
+		"ypos_hidef"			"65"
+		"zpos"			"1"
+		"wide"			"102" [$WIN32] 
+		"wide"			"94" [$X360]
+		"tall"			"24"
 		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
+		"pinCorner"		"0"
+		"visible"		"0"
 		"enabled"		"1"
-		"labelText"		"OK"
+		"labelText"		"#TF_Arena_Menu_Fight"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"command"		"continue"
-		"default"		"1"
-		"font"			"Default"
-		
-		"pin_to_sibling"		"MapInfoText"
-		"pin_corner_to_sibling"	"0"
-		"pin_to_sibling_corner"	"2"
-		
-		"fgcolor"			"PanelText"
-		"defaultFgColor_override" "PanelText"
-		"armedFgColor_override" "PanelText"
-		"depressedFgColor_override" "PanelText"
-		"selectedFgColor_override" "PanelText"
-			
-		"bgcolor_override"			"blank"
-		"defaultbgColor_override" "blank"
-		"armedbgColor_override" "Red"
-		"depressedbgColor_override" "blank"
-		"selectedbgColor_override" "Red"
-		
-		"paintbackground"	"1"
-		"paintborder"	"1"
-		"paintbackgroundtype"	"0"
-		
-		"border"			"HL2ButtonBorder"
-		"border_default"			"HL2ButtonBorder"
-		"border_armed"			"HL2ButtonBorder"
-	}
-
-	"ContinueShortcut"
-	{
-		"ControlName"		"CExButton"
-		"fieldName"			"ContinueShortcut"
-		"wide"				"0"
-		"visible"			"1"
-		"labelText"			"&E"
-		"Command"			"continue"
-	}
-	
-	"MapInfoWatchIntro" [$WIN32]
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"MapInfoWatchIntro"
-		"xpos"			"12"
-		"ypos"			"0"
-		"zpos"			"6"
-		"wide"			"128"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"#TF_WatchIntro"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"command"		"intro"
-		"default"		"1"
-		"font"			"Default"
-		
-		"pin_to_sibling"		"MapInfoContinue2"
-		"pin_corner_to_sibling"	"0"
-		"pin_to_sibling_corner"	"1"
-		
-		"fgcolor"			"PanelText"
-		"defaultFgColor_override" "PanelText"
-		"armedFgColor_override" "PanelText"
-		"depressedFgColor_override" "PanelText"
-		"selectedFgColor_override" "PanelText"
-			
-		"bgcolor_override"			"blank"
-		"defaultbgColor_override" "blank"
-		"armedbgColor_override" "Red"
-		"depressedbgColor_override" "blank"
-		"selectedbgColor_override" "Red"
-		
-		"paintbackground"	"1"
-		"paintborder"	"1"
-		"paintbackgroundtype"	"0"
-		
-		"border"			"HL2ButtonBorder"
-		"border_default"			"HL2ButtonBorder"
-		"border_armed"			"HL2ButtonBorder"
-	}
-	
-	"MapInfoBack" [$WIN32]
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"MapInfoBack"
-		"xpos"			"r0"
-		"xpos_hidef"			"50"
-		"ypos"			"r40"
-		"ypos_lodef"			"r64"
-		"ypos_hidef"			"r54"
-		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"#TF_Back"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"command"		"back"
+		"wrap"			"0"
 		"font"			"MenuSmallFont"
-		"fgcolor"		"Black"
+		"fgcolor"		"black"
 	}
 	
+	"TeamMenuSpectate"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TeamMenuSpectate"
+		"xpos"			"c-112"
+		"xpos_lodef"			"c-125"
+		"xpos_hidef"			"c-109"
+		"ypos"			"255"
+		"ypos_lodef"	"292"
+		"zpos"			"1"
+		"wide"			"44"
+		"wide_lodef"	"70"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_Spectate"
+		"textAlignment"	"north"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"wrap"			"0"
+		"font"			"MenuSmallestFont"
+		"font_lodef"	"MenuSmallFont"
+		"fgcolor"		"white"
+	}
+
 	"MenuBG"
 	{
 		"ControlName"	"CModelPanel"
@@ -530,18 +511,18 @@
 		
 		"model"
 		{
-			"modelname"	"models/vgui/UI_welcome01_screen.mdl"
+			"modelname"	"models/vgui/ui_arena01.mdl"
 			"skin"		"0"
 			"angles_x" "0"
 			"angles_y" "180"
 			"angles_z" "0"
 			"origin_x" "290"
+			"origin_x_hidef" "305"
 			"origin_x_lodef" "320"
-			"origin_x_hidef" "310"
 			"origin_y" "0"
-			"origin_z" "-39"
+			"origin_z" "-34"
 		}
-	}					
+	}	
 
 	"ShadedBar"
 	{
@@ -561,11 +542,108 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"image"			"loadout_bottom_gradient"
-		"tileImage"		"1"
+		"fillcolor"		"0 0 0 180"
 		"PaintBackgroundType"	"0"
-	}	
+	}		
+		
+	"autodoor"
+	{
+		"ControlName"	"CModelPanel"
+		"fieldName"		"autodoor"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"2"		
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"fov"			"20"
+		
+		"model"
+		{
+			"modelname"	"models/vgui/ui_arenadoor01.mdl"
+			"skin"		"0"
+			"angles_x" "0"
+			"angles_y" "180"
+			"angles_z" "0"
+			"origin_x" "290"
+			"origin_x_lodef" "320"
+			"origin_x_hidef" "305"
+			"origin_y" "0"
+			"origin_z" "-34"
+			
+			"animation"
+			{
+				"name"			"idle_enabled"
+				"sequence"		"idle"
+				"default"		"1"
+			}
 
+			"animation"
+			{
+				"name"			"enter_enabled"
+				"sequence"		"hoveropen"
+			}
+			
+			"animation"
+			{
+				"name"			"exit_enabled"
+				"sequence"		"hoverclose"
+			}
+		}
+	}		
+	
+	"spectate"
+	{
+		"ControlName"	"CModelPanel"
+		"fieldName"		"spectate"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"0"		
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"fov"			"20"
+		
+		"model"
+		{
+			"modelname"	"models/vgui/UI_team01_spectate.mdl"
+			"skin"		"0"
+			"angles_x" "0"
+			"angles_y" "180"
+			"angles_z" "0"
+			"origin_x" "290"
+			"origin_x_lodef" "320"
+			"origin_x_hidef" "305"
+			"origin_y" "0"
+			"origin_z" "-34"
+			
+			"animation"
+			{
+				"name"			"idle_enabled"
+				"sequence"		"idle"
+				"default"		"1"
+			}
+
+			"animation"
+			{
+				"name"			"enter_enabled"
+				"sequence"		"hover"
+			}
+			
+			"animation"
+			{
+				"name"			"exit_enabled"
+				"sequence"		"idle"
+			}
+		}
+	}			
+	
 	"Footer" [$X360]
 	{
 		"ControlName"		"CTFFooter"
@@ -575,26 +653,39 @@
 		"button_separator"	"10"
 		"button_separator_lodef"	"5"
 		"buttongap"			"50"
+		"buttongap_hidef"		"35"
+		"buttongap_lodef"			"18"
 		"textadjust"		"3"
+		"textadjust_lodef"		"0"
 		"buttonoffsety"		"20"
 		"buttonoffsety_hidef"		"0"
 		"buttonoffsety_lodef"		"18"
+		"center"			"0"
+		"button_pin_right_lodef"	"55"
 		"fonttext"			"MatchmakingDialogMenuLarge"
 		"fonttext_lodef"			"MatchmakingDialogMenuSmall"
 		"fgcolor"			"HudOffWhite" 	
 		
 		"button"
 		{
-			"name"		"intro"
-			"text"		"#TF_WatchIntro_360"
-			"icon"		"#GameUI_Icons_Y_BUTTON"	
+			"name"		"cancel"
+			"text"		"#GameUI_Cancel"
+			"icon"		"#GameUI_Icons_B_BUTTON"	
 		}
 		
 		"button"
 		{
-			"name"		"continue"
-			"text"		"#TF_Continue_360"
+			"name"		"nextprev"
+			"text"		"#TF_NextPrev"
+			"icon"		"#GameUI_Icons_DPAD"	
+		}
+		
+		"button"
+		{
+			"name"		"select"
+			"text"		"#GameUI_Select"
 			"icon"		"#GameUI_Icons_A_BUTTON"	
 		}
 	}	
 }
+
